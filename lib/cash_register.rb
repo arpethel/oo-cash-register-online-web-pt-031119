@@ -28,7 +28,7 @@ class CashRegister
       @discount *= @total
       @total -= @discount
       # binding.pry
-      "Your new total is #{@total}."
+      "Your new total is $#{@total}."
     else
       "There is no discount to apply!"
       # @total
