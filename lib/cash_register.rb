@@ -57,6 +57,7 @@ class CashRegister
     #subtracts the last transaction from the total
     binding.pry
     @last_item = price * quantity
+    @total -= @last_item
   end
 
 
