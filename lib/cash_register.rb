@@ -5,7 +5,7 @@ class CashRegister
   attr_accessor :total, :title, :price, :discount
 
 
-  def initialize(total = 0, discount)
+  def initialize(total = 0, discount = nil)
     @total = total
     @items = []
     @discount = discount.to_f/100.to_f
@@ -33,10 +33,13 @@ class CashRegister
     #the cash register was initialized with an employee discount reduces the total
     #the cash register was not initialized with an employee discount returns a string error message that there is no discount to apply
     # binding.pry
-    binding.pry
-
-    @discount *= @price if @discount > 0
-    @price -= @discount
+    # binding.pry
+    if @discount > 0
+      @discount *= @total
+      @total -= @discount
+    else
+      "There is no discount to apply!"
+    end
     binding.pry
   end
 
