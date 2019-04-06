@@ -19,7 +19,7 @@ class CashRegister
     #also accepts an optional quantity
     #doesn't forget about the previous total
     # binding.pry
-    @total
+    
     @total += price
     @items << title
     # binding.pry
