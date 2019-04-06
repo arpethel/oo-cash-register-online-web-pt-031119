@@ -19,7 +19,7 @@ class CashRegister
   def add_item(title, price, quantity = 1)
     # @total += (price.to_f * quantity.to_f)
     @total += (price * quantity)
-    @items << title.uniq
+    @items << title
   end
 
   def apply_discount
@@ -46,7 +46,7 @@ class CashRegister
 
   def items
     #returns an array containing all items that have been added
-    @items.uniq
+    @items
     # binding.pry
   end
 
