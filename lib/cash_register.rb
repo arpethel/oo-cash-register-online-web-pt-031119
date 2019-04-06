@@ -53,7 +53,7 @@ class CashRegister
     # binding.pry
   end
 
-  def void_last_transaction(transaction)
+  def void_last_transaction
     #subtracts the last transaction from the total
     binding.pry
   end
