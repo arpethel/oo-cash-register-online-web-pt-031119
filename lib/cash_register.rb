@@ -16,7 +16,7 @@ class CashRegister
 
   def add_item(title, price = 0)
     #increases the total price  X
-    #also accepts an optional quantity  
+    #also accepts an optional quantity
     #doesn't forget about the previous total
     # binding.pry
     @total += price
