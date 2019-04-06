@@ -21,8 +21,7 @@ class CashRegister
     #also accepts an optional quantity
     #doesn't forget about the previous total
     # binding.pry
-    price.to_f *= quantity.to_f
-    @total.to_f += price.to_f
+    @total += (price.to_f * quantity.to_f)
     @items << title
     binding.pry
   end
