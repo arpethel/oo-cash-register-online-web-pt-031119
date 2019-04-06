@@ -19,7 +19,7 @@ class CashRegister
   def add_item(title, price, quantity = 1)
     # @total += (price.to_f * quantity.to_f)
     @total += (price * quantity)
-    @items << title
+    @items << title.uniq
   end
 
   def apply_discount
