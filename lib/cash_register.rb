@@ -23,7 +23,7 @@ class CashRegister
     # binding.pry
     @total += (price.to_f * quantity.to_f)
     @items << title
-    binding.pry
+    # binding.pry
   end
 
   def apply_discount
