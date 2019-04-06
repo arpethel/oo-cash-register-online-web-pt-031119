@@ -19,6 +19,7 @@ class CashRegister
   def add_item(title, price, quantity = 1)
     # @total += (price.to_f * quantity.to_f)
     @total += (price * quantity)
+
     while quantity > 0
       @items << title
       quantity -=1
@@ -46,7 +47,6 @@ class CashRegister
   end
 
   def items
-    #returns an array containing all items that have been added
     @items
   end
 
