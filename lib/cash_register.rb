@@ -17,22 +17,11 @@ class CashRegister
   end
 
   def add_item(title, price, quantity = 1)
-    #increases the total price  X
-    #also accepts an optional quantity
-    #doesn't forget about the previous total
-    # binding.pry
-    @total += (price.to_f * quantity.to_f)
-    # @items << title
-    # binding.pry
+    # @total += (price.to_f * quantity.to_f)
+    @total += (price * quantity)
   end
 
   def apply_discount
-    #the cash register was initialized with an employee discount applies the discount to the total price
-    #the cash register was initialized with an employee discount returns success message with updated total
-    #the cash register was initialized with an employee discount reduces the total
-    #the cash register was not initialized with an employee discount returns a string error message that there is no discount to apply
-    # binding.pry
-    # binding.pry
     if @discount != 0 || @discount != nil
       @discount *= @total
       @total -= @discount
