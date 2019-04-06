@@ -8,7 +8,7 @@ class CashRegister
   def initialize(total = 0, discount)
     @total = total
     @items = []
-    @discount = discount
+    # @discount = discount
     # binding.pry
   end
 
