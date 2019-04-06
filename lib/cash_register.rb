@@ -9,7 +9,7 @@ class CashRegister
     @total = total
     @items = []
     @discount = discount
-    binding.pry
+    # binding.pry
   end
 
   def total
