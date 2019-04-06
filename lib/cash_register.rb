@@ -5,10 +5,10 @@ class CashRegister
   attr_accessor :total, :title, :price, :discount
 
 
-  def initialize(total = 0, discount = nil)
+  def initialize(total = 0, discount)
     @total = total
     @items = []
-    @discount = discount.to_f/100.to_f
+    @discount = discount.to_f/100.to_f if @discount != nil
     # binding.pry
   end
 
