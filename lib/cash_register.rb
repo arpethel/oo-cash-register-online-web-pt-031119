@@ -8,8 +8,8 @@ class CashRegister
   def initialize(total = 0, discount)
     @total = total
     @items = []
-    @discount = discount
-    # binding.pry
+    @discount = discount.to_f
+    binding.pry
   end
 
   def total
@@ -34,6 +34,7 @@ class CashRegister
     #the cash register was not initialized with an employee discount returns a string error message that there is no discount to apply
     # binding.pry
     binding.pry
+    
     @total *= @discount if @discount > 0
     # binding.pry
   end
