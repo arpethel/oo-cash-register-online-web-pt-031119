@@ -8,7 +8,6 @@ class CashRegister
   def initialize (discount = 0)
     @total = 0
     @items = []
-    # @discount = discount.to_f/100.to_f
     @discount = discount
   end
 
@@ -17,7 +16,6 @@ class CashRegister
   end
 
   def add_item(title, price, quantity = 1)
-    # @total += (price.to_f * quantity.to_f)
     @total += (price * quantity)
 
     while quantity > 0
@@ -32,18 +30,6 @@ class CashRegister
     else
       "There is no discount to apply."
     end
-
-    # if @discount > 0
-    #   @discount = discount.to_f/100.to_f
-    #   @discount *= @total
-    #   @total -= @discount
-    #   # binding.pry
-    #   "Your new total is $#{@total}."
-    # else
-    #   "There is no discount to apply!"
-    #   # @total
-    # end
-    # # binding.pry
   end
 
   def items
