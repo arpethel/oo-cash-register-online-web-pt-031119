@@ -34,14 +34,15 @@ class CashRegister
     #the cash register was not initialized with an employee discount returns a string error message that there is no discount to apply
     # binding.pry
     # binding.pry
-    if @discount != nil
+    if @discount != 0
       @discount *= @total
       @total -= @discount
       @total
     else
       "There is no discount to apply!"
+      @total
     end
-    # binding.pry
+    binding.pry
   end
 
   def items
