@@ -26,7 +26,7 @@ class CashRegister
     if @discount != 0 || @discount != nil
       @discount *= @total
       @total -= @discount
-      @total
+      "Your new total is #{@total}."
     else
       "There is no discount to apply!"
       @total
