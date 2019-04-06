@@ -2,14 +2,14 @@ require 'pry'
 
 class CashRegister
 
-  attr_accessor :total, :title, :price, :discount
-
+  attr_accessor :total, :title, :price #, :discount
+  attr_reader :discount
 
   def initialize (discount = 0)
     @total = 0
     @items = []
-    @discount = discount.to_f/100.to_f
-    # binding.pry
+    # @discount = discount.to_f/100.to_f
+    @discount = discount
   end
 
   def total
@@ -22,7 +22,7 @@ class CashRegister
     #doesn't forget about the previous total
     # binding.pry
     @total += (price.to_f * quantity.to_f)
-    @items << title
+    # @items << title
     # binding.pry
   end
 
