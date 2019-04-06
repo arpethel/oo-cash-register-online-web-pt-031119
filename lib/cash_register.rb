@@ -7,7 +7,7 @@ class CashRegister
   def initialize(total = 0)
     # binding.pry
     @total = total
-    binding.pry
+    # binding.pry
   end
 
   def total
