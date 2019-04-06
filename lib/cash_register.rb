@@ -38,10 +38,6 @@ class CashRegister
   end
 
   def void_last_transaction
-    # @last_item = price * quantity
     @total -= @last_item
-    # @total = 0
   end
-
-
 end
