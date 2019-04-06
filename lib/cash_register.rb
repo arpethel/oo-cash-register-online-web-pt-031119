@@ -26,10 +26,8 @@ class CashRegister
   end
 
   def apply_discount
-    @total = @total - @discount * 10
-    # binding.pry
     if @discount > 0
-      "After the discount, the total comes to $#{@total}."
+      "After the discount, the total comes to $#{@total -= @discount * 10}."
     else
       "There is no discount to apply."
     end
@@ -50,12 +48,9 @@ class CashRegister
   def items
     #returns an array containing all items that have been added
     @items
-    # binding.pry
   end
 
   def void_last_transaction(price, quantity = 1)
-    #subtracts the last transaction from the total
-    # binding.pry
     @last_item = price * quantity
     @total -= @last_item
   end
