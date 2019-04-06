@@ -2,23 +2,23 @@ require 'pry'
 
 class CashRegister
 
-  attr_accessor :total
+  attr_accessor :total, :title, :price
+
 
   def initialize(total = 0)
-    # binding.pry
     @total = total
-    # binding.pry
+    @items = []
   end
 
   def total
     @total
-
   end
 
   def add_item(title, price)
     #increases the total price
     #also accepts an optional quantity
     #doesn't forget about the previous total
+    
 
   end
 
