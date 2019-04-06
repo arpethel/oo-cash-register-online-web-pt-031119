@@ -47,6 +47,7 @@ class CashRegister
   def items
     #returns an array containing all items that have been added
     @items.uniq
+    binding.pry
   end
 
   def void_last_transaction
