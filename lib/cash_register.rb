@@ -16,15 +16,15 @@ class CashRegister
     @total
   end
 
-  def add_item(title, price, quantity)
+  def add_item(title, price, quantity = 1)
     #increases the total price  X
     #also accepts an optional quantity
     #doesn't forget about the previous total
-    binding.pry
-
-    @total += price
-    @items << title
     # binding.pry
+    price.to_f *= quantity.to_f
+    @total.to_f += price.to_f
+    @items << title
+    binding.pry
   end
 
   def apply_discount
