@@ -22,18 +22,19 @@ class CashRegister
   end
 
   def apply_discount
+    @total = @total - @discount * 10
 
-    if @discount != 0 || @discount != nil
-      @discount = discount.to_f/100.to_f
-      @discount *= @total
-      @total -= @discount
-      # binding.pry
-      "Your new total is $#{@total}."
-    else
-      "There is no discount to apply!"
-      # @total
-    end
-    # binding.pry
+    # if @discount != 0 || @discount != nil
+    #   @discount = discount.to_f/100.to_f
+    #   @discount *= @total
+    #   @total -= @discount
+    #   # binding.pry
+    #   "Your new total is $#{@total}."
+    # else
+    #   "There is no discount to apply!"
+    #   # @total
+    # end
+    # # binding.pry
   end
 
   def items
