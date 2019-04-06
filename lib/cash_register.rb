@@ -22,7 +22,7 @@ class CashRegister
     #doesn't forget about the previous total
     # binding.pry
     @total += (price.to_f * quantity.to_f)
-    # @items << title
+    @items << title
     # binding.pry
   end
 
