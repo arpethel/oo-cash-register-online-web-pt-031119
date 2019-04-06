@@ -11,7 +11,7 @@ class CashRegister
   end
 
   def total
-    #returns current total
+    @total
 
   end
 
