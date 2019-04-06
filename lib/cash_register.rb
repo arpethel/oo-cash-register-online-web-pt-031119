@@ -34,8 +34,9 @@ class CashRegister
     #the cash register was not initialized with an employee discount returns a string error message that there is no discount to apply
     # binding.pry
     binding.pry
-
-    @total *= @discount if @discount > 0
+    
+    @discount *= @price if @discount > 0
+    @price -= @discount
     binding.pry
   end
 
