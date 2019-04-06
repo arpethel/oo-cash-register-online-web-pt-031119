@@ -22,7 +22,7 @@ class CashRegister
     @new_total = @total
     @new_total += price
     @items << title
-    binding.pry
+    # binding.pry
   end
 
   def apply_discount
