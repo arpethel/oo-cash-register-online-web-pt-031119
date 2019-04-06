@@ -36,7 +36,7 @@ class CashRegister
     binding.pry
 
     @total *= @discount if @discount > 0
-    # binding.pry
+    binding.pry
   end
 
   def items
