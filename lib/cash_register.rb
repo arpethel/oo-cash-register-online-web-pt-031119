@@ -19,6 +19,7 @@ class CashRegister
   def add_item(title, price, quantity = 1)
     # @total += (price.to_f * quantity.to_f)
     @total += (price * quantity)
+    @items << title
   end
 
   def apply_discount
@@ -30,7 +31,7 @@ class CashRegister
       "There is no discount to apply."
     end
 
-    # if @discount != 0 || @discount != nil
+    # if @discount > 0
     #   @discount = discount.to_f/100.to_f
     #   @discount *= @total
     #   @total -= @discount
