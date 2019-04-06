@@ -42,7 +42,7 @@ class CashRegister
       "There is no discount to apply!"
       @total
     end
-    binding.pry
+    # binding.pry
   end
 
   def items
