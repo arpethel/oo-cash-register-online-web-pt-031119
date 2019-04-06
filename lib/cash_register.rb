@@ -14,7 +14,7 @@ class CashRegister
     @total
   end
 
-  def add_item(title, price = nil)
+  def add_item(title = nil, price = nil)
     #increases the total price  X
     #also accepts an optional quantity
     #doesn't forget about the previous total
